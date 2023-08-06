@@ -1,0 +1,112 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: -0.5rem;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+}
+.adsa {
+  font-size: 30px;
+}
+
+/* LOGO */
+.container .header .header-left img {
+  width: 120px;
+}
+
+.container .header .header-left i {
+  font-size: 24px;
+  padding-right: 10px;
+}
+
+/* search */
+.search-box form input {
+  width: 477px;
+  height: 35px;
+  border-radius: 15px;
+  padding: 15px 20px;
+}
+.search-box form button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  border: none;
+  margin: 0 0.2rem;
+  cursor: pointer;
+}
+/* header right */
+.registry {
+  display: flex;
+}
+.registry button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background: white;
+  margin: 0 0.5rem;
+}
+.registry button i {
+  font-size: 18px;
+}
+
+.registry button:hover {
+  background: rgb(214, 209, 209);
+}
+
+.registry .avatar {
+  width: 44px;
+  height: 44px;
+  margin-left: 0.2rem;
+}
+
+.registry .avatar img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* main -> menu */
+
+.main {
+  display: flex;
+  margin-top: 1rem;
+  padding: 0 20px;
+}
+.main .menu {
+  background-color: red;
+  width: 20%;
+  height: 200px;
+  margin-left: -1rem;
+}
+
+.main .menu .menu_item {
+  display: flex;
+  background: green;
+  text-align: center;
+  padding: 0cap 20px;
+  justify-content: left;
+  border-radius: 15px;
+}
+
+.main .menu .menu_item .icon {
+  margin-top: 1rem;
+  margin-right: 3rem;
+}
+.main .menu .menu_item .icon i {
+  font-size: 18px;
+}
+
+/* main -> Start content video */
+.main .cotent-video {
+  background-color: yellow;
+  width: 80%;
+  height: 300px;
+  margin-left: 1rem;
+}
