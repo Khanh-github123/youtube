@@ -1,10 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
 .header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
-  margin-top: -0.5rem;
+  align-items: center;
+  height: 60px;
+  padding: 15px;
 }
+
+.side-bar {
+  height: 100%;
+  width: 17%;
+  background-color: white;
+  overflow-y: hidden;
+}
+@media (max-width: 768px) {
+  .side-bar {
+    display: none;
+  }
+}
+
 .header-left {
   display: flex;
   align-items: center;
@@ -76,37 +99,154 @@
 
 .main {
   display: flex;
+
   margin-top: 1rem;
   padding: 0 20px;
 }
 .main .menu {
-  background-color: red;
-  width: 20%;
-  height: 200px;
-  margin-left: -1rem;
+  width: 18%;
+  height: 100vh;
+  margin-left: -2rem;
 }
 
 .main .menu .menu_item {
   display: flex;
-  background: green;
   text-align: center;
-  padding: 0cap 20px;
+  padding: 0 10px;
   justify-content: left;
   border-radius: 15px;
+  height: 100vh;
 }
 
-.main .menu .menu_item .icon {
+.main .menu .menu_item .nav {
   margin-top: 1rem;
   margin-right: 3rem;
 }
-.main .menu .menu_item .icon i {
-  font-size: 18px;
+.main .menu .menu_item .nav i {
+  font-size: 22px;
+  display: block;
 }
 
+.main .menu .menu_item .nav a span {
+  font-size: 16px;
+  margin-left: 2.5rem;
+}
+
+.main .menu .menu_item .nav .sub {
+  margin-top: 1rem;
+}
 /* main -> Start content video */
 .main .cotent-video {
-  background-color: yellow;
-  width: 80%;
+  width: 82%;
   height: 300px;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
+}
+
+/* Fix */
+.main .cotent-video .videos {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+
+.main .cotent-video .videos .video {
+  margin-bottom: 1rem;
+}
+
+.main .cotent-video .videos .video .thumbnail img {
+  border-radius: 10px;
+  width: 100%;
+  height: 220px;
+}
+.main .cotent-video .videos .video .details {
+  margin-top: 1rem;
+}
+.main .cotent-video .videos .video .details .title h5 {
+  font-size: 16px;
+  margin-right: -2rem;
+}
+
+.main .cotent-video .videos .video .details .title a {
+  margin-top: 0.5rem;
+  font-size: 14px;
+  margin-bottom: 0.3rem;
+}
+
+/* start menu */
+.nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 25px;
+}
+
+.nav-link span {
+  margin-left: 15px;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+}
+
+/* content video */
+/* .content {
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 100%;
+  padding: 15px 15px;
+  border-top: 1px solid #ddd;
+  overflow-y: scroll;
+} */
+
+/* .videos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+} */
+
+/* .video {
+  width: 270px;
+  margin-bottom: 30px;
+} */
+
+/* .thumbnail img {
+  object-fit: cover;
+  height: 94%;
+  width: 100%;
+} */
+.author img {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+.details {
+  display: flex;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.title h3 {
+  color: rgb(3, 3, 3);
+  line-height: 18px;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.title a,
+span {
+  text-decoration: none;
+  color: rgb(96, 96, 96);
+  font-size: 12px;
 }
