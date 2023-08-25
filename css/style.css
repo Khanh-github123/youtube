@@ -250,3 +250,55 @@ span {
   color: rgb(96, 96, 96);
   font-size: 12px;
 }
+/* responsive deskstops */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .title h5 {
+    max-width: 200px;
+  }
+
+  .main .menu .menu_item .nav a span {
+    font-size: 16px;
+    margin-left: 0.5rem;
+    text-align: left;
+  }
+
+  .nav-link {
+    padding: 12px 10px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .title h5 {
+    max-width: 280px;
+  }
+  .nav-link {
+    display: block;
+    padding: 12px 10px;
+  }
+  .main .menu .menu_item .nav a span {
+    margin-left: 0px;
+    font-size: 12px;
+  }
+  .main .menu {
+    width: 17%;
+  }
+
+  .main .cotent-video .videos {
+    grid-template-columns: auto auto;
+  }
+  .search-box form input {
+    width: 315px;
+  }
+  .main .cotent-video {
+    width: 100%;
+  }
+  .registry .avatar,
+  .registry button,
+  .search-box form button {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+}
